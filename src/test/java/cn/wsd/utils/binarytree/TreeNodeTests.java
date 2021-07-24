@@ -1,4 +1,4 @@
-package edu.ustb.utils.binarytree;
+package cn.wsd.utils.binarytree;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -6,7 +6,6 @@ import java.util.Objects;
 import java.util.Stack;
 import java.util.stream.Collectors;
 
-import static org.junit.jupiter.api.Assertions.*;
 
 class TreeNodeTests {
 	// 左、右、根

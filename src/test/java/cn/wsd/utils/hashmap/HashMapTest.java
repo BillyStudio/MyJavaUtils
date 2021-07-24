@@ -1,4 +1,4 @@
-package edu.ustb.utils;
+package cn.wsd.utils.hashmap;
 
 import java.util.HashMap;
 

@@ -1,4 +1,4 @@
-package edu.ustb.utils;
+package cn.wsd.utils;
 
 import java.util.Objects;
 import java.util.Random;

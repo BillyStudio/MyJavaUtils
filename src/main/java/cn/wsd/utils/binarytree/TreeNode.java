@@ -1,4 +1,4 @@
-package edu.ustb.utils.binarytree;
+package cn.wsd.utils.binarytree;
 
 public class TreeNode {
 	public int val;

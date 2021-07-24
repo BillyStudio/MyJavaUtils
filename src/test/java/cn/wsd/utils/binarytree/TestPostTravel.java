@@ -1,4 +1,4 @@
-package edu.ustb.utils.binarytree;
+package cn.wsd.utils.binarytree;
 
 import java.util.*;
 import java.util.stream.Collectors;
