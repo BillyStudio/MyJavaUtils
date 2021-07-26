@@ -35,7 +35,7 @@ class TreeNodeTests {
 				}
 				// 此时currentNode即左节点
 			} else if (currentNode.right == previousNode){ // 第3种情况
-				result.add(currentNode.val);
+				result.add((Integer) currentNode.getValue());
 				continue;
 			}
 			/* 两种情况： 1.currentNode为左节点，存在还没访问的右子树； 2.左子树访问完，无右子树,currentNode均不在栈中
@@ -47,7 +47,7 @@ class TreeNodeTests {
 				// 右子树的根节点压栈
 				stack.push(currentNode.right);
 			} else { // 左右子树均已访问
-				result.add(currentNode.val);
+				result.add((Integer) currentNode.getValue());
 			}
 		}
 		return result;

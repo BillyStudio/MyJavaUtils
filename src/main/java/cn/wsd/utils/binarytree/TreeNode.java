@@ -1,13 +1,17 @@
 package cn.wsd.utils.binarytree;
 
-public class TreeNode {
-	public int val;
+public class TreeNode<T> {
+	private T val;
 
-	public TreeNode left;
-	public TreeNode right;
+	public TreeNode<T> left;
+	public TreeNode<T> right;
 
-	public TreeNode(int value) {
+	public TreeNode(T value) {
 		this.val = value;
+	}
+
+	public T getValue() {
+		return val;
 	}
 
 	@Override
