@@ -8,7 +8,7 @@ public class TestVerticalTraversal {
 		LinkedHashMap<Integer, LinkedHashMap<Integer, List<Integer>>> grid = new LinkedHashMap<>();
 		visitNode(root, grid, 0, 0);
 		List<List<Integer>> result = grid.entrySet().stream()
-				.sorted((entry1, entry2) -> entry1.getKey() - entry2.getKey())
+				.sorted(Map.Entry.comparingByKey())
 				.map(entry -> {
 					LinkedHashMap<Integer, List<Integer>> row2Check = entry.getValue();
 					List<List<Integer>> listOflist = row2Check.entrySet().stream()
