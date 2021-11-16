@@ -10,7 +10,7 @@ public class Consumer extends Thread {
 	@Override
 	public void run() {
 		try {
-			for (int i = 0; i < 10; ++i) {
+			while(true) {
 				int val = (int) buffer.remove();
 				System.out.println("consume "+val);
 			}

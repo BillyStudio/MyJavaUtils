@@ -10,7 +10,11 @@ public class ConversionUtil {
 		return input.stream().mapToInt(Integer::intValue).toArray();
 	}
 
-	// List::toArray，老功能了，但要注意后面的数组大小分配
+	/**
+	 * List::toArray，老功能了，但要注意后面的数组大小分配
+	 * @param input List容器类型，广义上对于Collection容器类都是支持的
+	 * @return
+	 */
 	public static Integer[] List2IntegerArr(List<Integer> input) {
 		return input.toArray(new Integer[input.size()]);
 	}

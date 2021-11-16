@@ -1,5 +1,15 @@
 package cn.wsd.utils.backtracking;
 
+/* 4个订单 查第3个订单的实际区餐顺序
+1 2 3 4
+输出： 3
+
+7 3
+8 7 8 9 1 2 8
+输出： 4
+
+m <= 1000
+ */
 import java.util.*;
 
 public class NQueens {
