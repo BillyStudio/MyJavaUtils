@@ -11,7 +11,7 @@ public class Data {
     private final boolean isCoder0;
     private final byte id;
     private final byte[] data;
-    private final Coder coder;
+    private final Counter coder;
     private final AbstractCoder abstractCoder;
 
     public Data(byte id, byte[] data) {

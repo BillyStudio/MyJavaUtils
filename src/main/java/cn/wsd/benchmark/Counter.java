@@ -1,5 +1,5 @@
 package cn.wsd.benchmark;
 
-public interface Coder {
+public interface Counter {
     int work(byte[] data);
 }

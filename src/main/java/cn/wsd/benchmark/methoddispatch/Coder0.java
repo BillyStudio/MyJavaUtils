@@ -1,8 +1,8 @@
 package cn.wsd.benchmark.methoddispatch;
 
-import cn.wsd.benchmark.Coder;
+import cn.wsd.benchmark.Counter;
 
-public class Coder0 extends AbstractCoder implements Coder {
+public class Coder0 extends AbstractCoder implements Counter {
     public static int staticWork(byte[] data) {
         return data.length;
     }

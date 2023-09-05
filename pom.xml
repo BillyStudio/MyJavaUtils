@@ -49,26 +49,29 @@
     </dependency>
   </dependencies>
 
-<!--  &lt;!&ndash; 内存分析使用 &ndash;&gt;-->
-<!--  <build>-->
-<!--    <plugins>-->
-<!--      <plugin>-->
-<!--        <artifactId>maven-jar-plugin</artifactId>-->
-<!--        <version>2.6</version>-->
-<!--        <configuration>-->
-<!--          <finalName>test</finalName>-->
-<!--          <archive>-->
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>2.6</version>
+        <configuration>
+          <finalName>test</finalName>
+          <archive>
 <!--            <manifestEntries>-->
 <!--              <Premain-class>cn.wsd.utils.sizeof.ObjectSizeUtil</Premain-class>-->
 <!--              <Boot-Class-Path></Boot-Class-Path>-->
 <!--              <Can-Redefine-Classes>false</Can-Redefine-Classes>-->
 <!--            </manifestEntries>-->
 <!--            <addMavenDescriptor>false</addMavenDescriptor>-->
-<!--          </archive>-->
-<!--        </configuration>-->
-<!--      </plugin>-->
-<!--    </plugins>-->
-<!--  </build>-->
-  
-  
+            <manifest>
+              <addClasspath>true</addClasspath>
+              <mainClass>cn.wsd.benchmark.methoddispatch.SimpleTestMain</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+
 </project>
